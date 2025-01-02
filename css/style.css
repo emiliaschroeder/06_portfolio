@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
+/* Farve variabler */
+html {
+  --cream: #fffdf0;
+  --red: #a6282f;
+  --sage: #cdc69a;
+  --mocca: #ccc8ba;
+  --brown: #290305;
+}
+
+body {
+  background-color: var(--mocca);
+}
+
+/* Tekst */
 h1 {
   font-family: "Brygada 1918", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
+  color: var(--red);
 }
 
 h2 {
@@ -17,6 +33,8 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  text-transform: uppercase;
+  color: var(--red);
 }
 
 h3 {
@@ -25,6 +43,8 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  text-transform: uppercase;
+  color: var(--red);
 }
 
 p {
@@ -33,4 +53,5 @@ p {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  color: var(--brown);
 }
