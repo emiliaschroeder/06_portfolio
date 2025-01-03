@@ -84,6 +84,12 @@ ul {
 .red_t {
   color: var(--red);
 }
+.cream_b {
+  background-color: var(--cream);
+}
+.brown_t {
+  color: var(--brown);
+}
 
 img {
   max-width: 100%;
