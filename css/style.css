@@ -11,6 +11,7 @@ html {
   --sage: #cdc69a;
   --mocca: #ccc8ba;
   --brown: #290305;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,8 @@ h1 {
   font-style: normal;
   text-transform: uppercase;
   color: var(--red);
+  font-size: 17.5vw;
+  text-align: center;
 }
 
 h2 {
@@ -35,6 +38,8 @@ h2 {
   font-variation-settings: "wdth" 100;
   text-transform: uppercase;
   color: var(--red);
+  font-size: clamp(20px, 5vw, 40px);
+  padding-bottom: 1rem;
 }
 
 h3 {
@@ -54,4 +59,23 @@ p {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: var(--brown);
+  /* 10px er minimun. Fonten bliver ikke mindre end 10px. 2vw gør tekststørrelsen responsiv, dvs størrelsen fylder 2% af skærmen. Det maksimale er 17px. */
+  font-size: clamp(10px, 2vw, 17px);
+  line-height: 200%;
+}
+
+/* Ændring af farve */
+.cream {
+  color: var(--cream);
+}
+.red {
+  background-color: var(--red);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }

@@ -3,3 +3,119 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--mocca);
+  font-family: "Anybody", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+.brown_t {
+  color: var(--brown);
+}
+
+.logo img {
+  max-width: 40%;
+}
+
+nav {
+  width: 100%; /* Ensure nav spans the full width */
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 5 evenly spaced columns */
+  width: 100%; /* Menu spans the full width */
+  list-style: none;
+  text-align: center;
+}
+
+.menu li {
+  margin: 0; /* Remove margin to prevent spacing issues */
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--brown);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center; /* Ensure the text inside each menu item is centered */
+}
+
+.menu a:hover {
+  transform: scale(1.03); /* zoom-in effect */
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--brown);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--mocca);
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+  .logo img {
+    max-width: 30%;
+  }
+}

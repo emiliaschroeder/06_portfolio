@@ -17,8 +17,69 @@
     <title>Forside</title>
   </head>
   <body>
-    <h1>Test</h1>
-    <p>Hej</p>
-    <script src="menu.js"></script>
+    <a href="index.html"><h1 id="start">Portfolio</h1></a>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="tema2.html"><h3 class="brown_t">Tema 2</h3></a>
+          </li>
+          <li>
+            <a href="tema3.html"><h3 class="brown_t">Tema 3</h3></a>
+          </li>
+          <li>
+            <a href="tema4.html"><h3 class="brown_t">Tema 4</h3></a>
+          </li>
+          <li>
+            <a href="tema5.html"><h3 class="brown_t">Tema 5</h3></a>
+          </li>
+          <li>
+            <a href="om_mig.html"><h3 class="brown_t">Om mig</h3></a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <img src="billeder/forside/forside.webp" alt="forside" />
+    <!-- Centrering af tekst -->
+    <div class="center">
+      <h2>Emilia Schrøder</h2>
+      <p>Velkommen til mit portfolio!</p>
+      <p>Jeg studerer multimediedesign på første semester på Københavns Erhvervsakademi. På denne hjemmeside har jeg samlet alt det, jeg har lært og arbejdet med i løbet af semesteret. Nedenfor kan du klikke på de forskellige temaer og dykke ned i min løsning, process og læring i hvert tema.</p>
+    </div>
+
+    <section class="projects">
+      <h2>Mine projekter</h2>
+      <div class="project_grid">
+        <div class="project-box">
+          <a href="tema2.html">
+            <img src="billeder/forside/brown_box.webp" alt="brun kasse" />
+          </a>
+        </div>
+        <div class="project-box">
+          <a href="tema3.html">
+            <img src="billeder/forside/green_box.webp" alt="grøn kasse" />
+          </a>
+        </div>
+        <div class="project-box">
+          <a href="tema4.html">
+            <img src="billeder/forside/white_box.webp" alt="hvid kasse" />
+          </a>
+        </div>
+        <div class="project-box">
+          <a href="tema5.html">
+            <img src="billeder/forside/red_box.webp" alt="rød kasse" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="red">
+      <a href="#start"><h1 class="cream">Portfolio</h1></a>
+    </footer>
+    <script src="javascript/menu.js"></script>
   </body>
 </html>

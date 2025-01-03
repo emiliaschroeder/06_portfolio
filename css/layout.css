@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Layout af tekstboks på forside */
+.center {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto; /* Centers the text block horizontally on the page */
+  padding: 50px;
+}
+/* Styling af klikbare kasser på forsiden */
+.project_grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* plads imellem kasserne */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.project-box:hover {
+  transform: scale(1.02); /* zoom-in effect */
+}
+.projects h2 {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .center {
+    text-align: center;
+    max-width: 55%;
+    margin: 0 auto; /* Centers the text block horizontally on the page */
+    padding: 60px;
+  }
+}
