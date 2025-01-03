@@ -52,7 +52,8 @@ h3 {
   color: var(--red);
 }
 
-p {
+p,
+ul {
   font-family: "Bricolage Grotesque", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -64,12 +65,24 @@ p {
   line-height: 200%;
 }
 
-/* Ændring af farve */
-.cream {
+/* Ændring af farve i footer*/
+.cream_t {
   color: var(--cream);
 }
-.red {
+.red_b {
   background-color: var(--red);
+}
+.sage_t {
+  color: var(--sage);
+}
+.brown_b {
+  background-color: var(--brown);
+}
+.sage_b {
+  background-color: var(--sage);
+}
+.red_t {
+  color: var(--red);
 }
 
 img {
@@ -78,4 +91,11 @@ img {
 
 a {
   text-decoration: none;
+}
+.marg p {
+  padding-top: 7px;
+}
+
+.marg h3 {
+  padding-top: 15px;
 }

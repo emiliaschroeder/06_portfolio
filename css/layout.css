@@ -20,11 +20,43 @@
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
-.project-box:hover {
+.project-box-f:hover {
   transform: scale(1.02); /* zoom-in effect */
 }
 .projects h2 {
   text-align: center;
+}
+
+/* tema 2 layout */
+.marg {
+  max-width: 80%;
+  margin: 0 auto; /* Centers the text block horizontally on the page */
+  padding: 50px;
+  /* tilføjer en transition effekt på alt der ændres (all - margin, padding), på 0.3 sekunder, med langsom, accelerere i midten, og langsom til slut. */
+  transition: all 0.3s ease; /* Smooth transition for margin and size adjustments */
+}
+
+/* .grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 5rem;
+} */
+/* 
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+} */
+
+/* .brown_box {
+  position: relative;
+  top: -40%;
+  left: 50%;
+} */
+.brown_box {
+  display: flex;
+  justify-content: end;
+  padding-right: 12rem;
 }
 
 @media (min-width: 800px) {
@@ -34,4 +66,12 @@
     margin: 0 auto; /* Centers the text block horizontally on the page */
     padding: 60px;
   }
+
+  .marg {
+    max-width: 50%;
+  }
+  /* margin på listepunkt */
+  /* ul {
+    margin-left: 30px;
+  } */
 }
