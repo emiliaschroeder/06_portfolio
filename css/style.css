@@ -39,7 +39,6 @@ h2 {
   text-transform: uppercase;
   color: var(--red);
   font-size: clamp(20px, 5vw, 40px);
-  padding-bottom: 1rem;
 }
 
 h3 {
@@ -103,5 +102,19 @@ a {
 }
 
 .marg h3 {
-  padding-top: 15px;
+  padding-top: 33px;
+}
+
+.marg img {
+  padding-top: 20px;
+}
+
+@media (min-width: 800px) {
+  h2 {
+    padding-bottom: 1rem;
+  }
+  .top {
+    margin-top: 3rem;
+    padding-left: 1rem;
+  }
 }

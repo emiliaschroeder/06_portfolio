@@ -67,6 +67,43 @@
 ul {
   margin-left: 15px;
 }
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* Lottie animationer */
+.container {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  margin-top: 3rem;
+}
+
+/* Så teksten under lottie og billede ikke overlapper */
+.wrapper {
+  display: block;
+  overflow: hidden; /* Prevents text from spilling into the animation container */
+  margin-top: -55px;
+}
+
+/* Baggrundsbilledet på forside(med lottie) */
+.forside_img {
+  grid-area: 1 / 1; /* Placerer animationen i samme grid celle */
+  width: 100%;
+  height: auto;
+}
+
+/* Lottie filen */
+.lottie {
+  grid-area: 1 / 1; /* Placerer animationen i samme grid celle */
+  width: 100%;
+  z-index: 2; /* bliver placeret ovenpå billedet */
+}
+
+.lottie_1 {
+  padding-top: 1rem;
+}
 
 @media (min-width: 800px) {
   .center {
