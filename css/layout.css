@@ -108,7 +108,6 @@ ul {
 /* CV GRID */
 .bold {
   font-weight: bold;
-  padding-top: 1rem;
 }
 .parent {
   text-align: center;
@@ -120,6 +119,40 @@ ul {
 
 .pad-top {
   padding-top: 3rem;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Styling af det første barn i sæt af 3 */
+.grid_1-1-1 > p:nth-child(3n + 1) {
+  padding-top: 1rem;
+}
+.bg_img {
+  background-image: url(../billeder/om_mig/Group\ 93.webp);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.grid_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 3rem;
+  gap: 10px;
+}
+.mig {
+  grid-column: 2 / span 1;
+}
+
+.bla {
+  grid-column: 3 / span 1;
+  margin-top: 70%;
+}
+
+.usynlig {
+  color: var(--mocca);
 }
 
 @media (min-width: 800px) {
@@ -146,35 +179,53 @@ ul {
   }
 
   /* Layout af cv grid */
-  /* Center the grid parent */
+  /* Centrering af grid parent */
   .parent {
     display: flex;
-    justify-content: center; /* Centers the grid horizontally */
-    align-items: center; /* Centers the grid vertically */
+    /* Centrerer grid horisontalt */
+    justify-content: center;
+    /* centrer grid vertikalt */
+    align-items: center;
   }
 
-  /* Style the grid */
+  /* Styling af grid */
   .grid_1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
-    grid-auto-rows: auto; /* Automatically size rows based on content */
-    gap: 10px; /* Add spacing between items */
-    width: 100%; /* Adjust grid width */
-    max-width: 1000px; /* Limit grid width for larger screens */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* automatisk størrelse af grid rækker baseret på det indhold der er med */
+    gap: 10px;
+    width: 100%;
+    /* bredden af grid */
+    max-width: 1000px;
     text-align: left; /* Default text alignment for all grid items */
   }
 
-  /* Column-specific text alignment */
+  /* Specifik styling af kolonerne */
+  /* n er en variabel, der repræsenterer en række tal (0, 1, 2, 3 osv.). */
   .grid_1-1-1 > p:nth-child(3n + 1) {
+    /* bold tekst i den første kolonne (3n+1 er rettet mod det første "barn" i hvert sæt af 3 - kolonne 1)*/
     font-weight: bold; /* Bold text for the first column */
-    text-align: left; /* Left-aligned */
+    padding-top: 0;
   }
 
+  /* Styling af det andet "barn" i hvert sæt af 3 (kolonne 2)*/
   .grid_1-1-1 > p:nth-child(3n + 2) {
-    text-align: center; /* Center-aligned for the middle column */
+    text-align: center;
   }
 
+  /* Styling af det tredje barn, i hvert sæt af 3 (tredje kolonne) */
   .grid_1-1-1 > p:nth-child(3n) {
     text-align: right; /* Right-aligned for the last column */
+  }
+
+  .grid_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10%;
+    gap: 10px;
+  }
+
+  .bla {
+    margin-top: 60%;
   }
 }
