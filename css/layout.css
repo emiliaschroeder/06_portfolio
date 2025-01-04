@@ -105,6 +105,23 @@ ul {
   padding-top: 1rem;
 }
 
+/* CV GRID */
+.bold {
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.parent {
+  text-align: center;
+}
+
+.middle {
+  text-align: center;
+}
+
+.pad-top {
+  padding-top: 3rem;
+}
+
 @media (min-width: 800px) {
   .center {
     text-align: center;
@@ -126,5 +143,38 @@ ul {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Layout af cv grid */
+  /* Center the grid parent */
+  .parent {
+    display: flex;
+    justify-content: center; /* Centers the grid horizontally */
+    align-items: center; /* Centers the grid vertically */
+  }
+
+  /* Style the grid */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+    grid-auto-rows: auto; /* Automatically size rows based on content */
+    gap: 10px; /* Add spacing between items */
+    width: 100%; /* Adjust grid width */
+    max-width: 1000px; /* Limit grid width for larger screens */
+    text-align: left; /* Default text alignment for all grid items */
+  }
+
+  /* Column-specific text alignment */
+  .grid_1-1-1 > p:nth-child(3n + 1) {
+    font-weight: bold; /* Bold text for the first column */
+    text-align: left; /* Left-aligned */
+  }
+
+  .grid_1-1-1 > p:nth-child(3n + 2) {
+    text-align: center; /* Center-aligned for the middle column */
+  }
+
+  .grid_1-1-1 > p:nth-child(3n) {
+    text-align: right; /* Right-aligned for the last column */
   }
 }
