@@ -40,6 +40,9 @@ h2 {
   color: var(--red);
   font-size: clamp(20px, 5vw, 40px);
 }
+.pad_bot {
+  padding-bottom: 1rem;
+}
 
 h3 {
   font-family: "Bricolage Grotesque", serif;
@@ -117,5 +120,8 @@ a {
   .top {
     margin-top: 3rem;
     padding-left: 1rem;
+  }
+  .pad_bot {
+    padding-bottom: 2rem;
   }
 }
