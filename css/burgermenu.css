@@ -32,7 +32,7 @@ nav {
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Create 5 evenly spaced columns */
+  grid-template-columns: repeat(6, 1fr); /* Create 5 evenly spaced columns */
   width: 100%; /* Menu spans the full width */
   list-style: none;
   text-align: center;

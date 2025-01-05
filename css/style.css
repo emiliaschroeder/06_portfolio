@@ -106,11 +106,19 @@ a {
 }
 
 .marg h3 {
-  padding-top: 33px;
+  padding-top: 15px;
 }
 
 .marg img {
   padding-top: 20px;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.underline {
+  padding-top: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -123,5 +131,9 @@ a {
   }
   .pad_bot {
     padding-bottom: 2rem;
+  }
+
+  .marg h3 {
+    padding-top: 33px;
   }
 }
