@@ -113,6 +113,7 @@ ul {
 
 .lottie_1 {
   padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 /* CV GRID */
@@ -170,8 +171,11 @@ ul {
   color: var(--brown);
 }
 
-.usynlig {
-  color: var(--mocca);
+.blomst {
+  grid-column: 1 / span 1;
+  margin-top: 70%;
+  margin-left: 50%;
+  max-width: 45%;
 }
 
 /* Forside grid layout med blomster illustrationer */
@@ -275,6 +279,11 @@ ul {
     font-size: 1.3rem;
   }
 
+  .blomst {
+    max-width: 60%;
+    margin-left: 40%;
+  }
+
   .bg_img {
     padding-bottom: 4rem;
   }
@@ -300,5 +309,9 @@ ul {
 
   .projects {
     padding-bottom: 3rem;
+  }
+
+  .lottie_1 {
+    padding-bottom: 5rem;
   }
 }
