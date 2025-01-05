@@ -127,6 +127,14 @@ iframe {
   height: 150px;
 }
 
+.illustration {
+  margin-top: -30px;
+  padding-bottom: 40px;
+}
+.video {
+  max-width: 100%;
+}
+
 @media (min-width: 800px) {
   /* h2 {
     padding-bottom: 1rem;
