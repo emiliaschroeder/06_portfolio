@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/burgermenu.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <!-- H1 font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,15 +78,6 @@
       </p>
       <h3>Udvikling og Teknisk Læring</h3>
       <p>Jeg lærte at udarbejde og forstå aktivitetsdiagrammer og layoutdiagrammer, som var essentielle for at strukturere mit spil. Diagrammerne gav mig overblik over hele processen, fra idé til implementering i JavaScript og CSS.</p>
-      <p>
-        I processen med at udvikle spillet har jeg brugt JavaScript til at skabe interaktivitet og dynamik. Jeg har arbejdet med funktioner som addClass og removeClass. For eksempel blev classen "fald" tilføjet for at få objekter til at falde ned fra toppen af skærmen. Jeg har brugt events som load, click, animationend og animationiteration. De blev blandt andet brugt til at lytte efter, om timeranimationen var færdig (animationend), og hvilken funktion der skulle udføres bagefter. Med animationiteration kunne jeg lytte efter, om en animation var kørt én gang, hvilket gjorde det muligt at styre gentagelser i spillet. Betingelser (if-else) blev brugt til at implementere lydeffekter, så spillet kunne veksle mellem to forskellige lyde når der blev klikket på et element. Det gjorde
-        lydoplevelsen mere varieret og underholdende for spilleren. <br />
-        Til tilfældige placeringer af objekter brugte jeg math.random, som genererede en position ud fra de definerede CSS-positioner. <br />
-        Denne praktiske erfaring med JavaScript har givet mig et stærkt fundament i at skabe dynamiske elementer, der gjorde spillet mere engagerende og underholdende.
-      </p>
-      <p>De spilelementer, jeg tegnede i Illustrator, blev eksporteret som SVG-filer, hvilket gav mulighed for at animere dem. Jeg optog selv lydeffekter og fandt baggrundsmusik, som blev implementeret i HTML som MP3-filer.</p>
-
-      <audio src="background_music copy.mp3" id="background_music" controls></audio>
 
       <div class="grid_1-1">
         <div>
@@ -97,6 +89,20 @@
           <img src="billeder/tema4/tema4_statemachine.webp" alt="statemachine" />
         </div>
       </div>
+      <p>
+        I processen med at udvikle spillet har jeg brugt JavaScript til at skabe interaktivitet og dynamik. Jeg har arbejdet med funktioner som addClass og removeClass. For eksempel blev classen "fald" tilføjet for at få objekter til at falde ned fra toppen af skærmen. Jeg har brugt events som load, click, animationend og animationiteration. De blev blandt andet brugt til at lytte efter, om timeranimationen var færdig (animationend), og hvilken funktion der skulle udføres bagefter. Med animationiteration kunne jeg lytte efter, om en animation var kørt én gang, hvilket gjorde det muligt at styre gentagelser i spillet. Betingelser (if-else) blev brugt til at implementere lydeffekter, så spillet kunne veksle mellem to forskellige lyde når der blev klikket på et element. Det gjorde
+        lydoplevelsen mere varieret og underholdende for spilleren. <br />
+        Til tilfældige placeringer af objekter brugte jeg math.random, som genererede en position ud fra de definerede CSS-positioner. <br />
+        Denne praktiske erfaring med JavaScript har givet mig et stærkt fundament i at skabe dynamiske elementer, der gjorde spillet mere engagerende og underholdende.
+      </p>
+
+      <div id="element">
+        <!-- Klikbar kirsebær -->
+        <div id="good_container1">
+          <div id="good_sprite1"></div>
+        </div>
+      </div>
+      <p class="space">De spilelementer, jeg tegnede i Illustrator, blev eksporteret som SVG-filer, hvilket gav mulighed for at animere dem. Jeg optog selv lydeffekter og fandt baggrundsmusik, som blev implementeret i HTML som MP3-filer.</p>
 
       <h3>Spilkoncept</h3>
       <p>
@@ -108,6 +114,7 @@
         Jeg er meget tilfreds med mit endelige spil, som lever op til mine oprindelige værdiord og skitser. Processen har styrket mine evner inden for Illustrator, animation og JavaScript og vist mig, hvor vigtig struktur og planlægning er, når man udvikler et digitalt produkt. Spillet blev vellykket og leverer en sjov, livlig og engagerende oplevelse, der afspejler de sommerlige og nostalgiske picnic-motiver, jeg ønskede at formidle. <br />
         Slutresultatet blev en hjemmeside, der matcher spillets legende udtryk. Jeg valgte legende og håndskrevet fonte, som understøtter spillets identitet, og har anvendt en livlig rød farve for at fremhæve energien og dynamikken i designet.
       </p>
+
       <div class="grid_1-1-1-1-1">
         <img src="billeder/tema4/apple.svg" alt="" />
         <img src="billeder/tema4/banana.svg" alt="" />
@@ -120,6 +127,7 @@
         <img src="billeder/tema4/sock.svg" alt="" />
         <img src="billeder/tema4/wine.svg" alt="" />
       </div>
+
       <h3>Designprocessen i Figma</h3>
       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1)" src="https://embed.figma.com/design/HrYFvaRjKMQA4VDhL0vGTC/Tema-4%3A-Animation?node-id=0-1&embed-host=share" allowfullscreen></iframe>
       <a href="https://taylordesign.dk/kea/04_animation/website/index.html"><h2 class="underline brown_t">Se min løsning her</h2></a>
@@ -130,5 +138,6 @@
     </footer>
 
     <script src="javascript/menu.js"></script>
+    <script src="javascript/animation.js"></script>
   </body>
 </html>
