@@ -8,7 +8,7 @@
 .center {
   text-align: center;
   max-width: 70%;
-  margin: 0 auto; /* Centers the text block horizontally on the page */
+  margin: 0 auto; /* centrerer teksten horisontalt på siden */
   padding: 50px;
 }
 /* Styling af klikbare kasser på forsiden */
@@ -21,7 +21,7 @@
   margin-bottom: 2rem;
 }
 .project-box-f:hover {
-  transform: scale(1.02); /* zoom-in effect */
+  transform: scale(1.02); /* zoom-in effekt */
 }
 .projects h2 {
   text-align: center;
@@ -29,7 +29,7 @@
 
 /* zoom effekt */
 .zoom:hover {
-  transform: scale(1.01); /* zoom-in effect */
+  transform: scale(1.01); /* zoom-in effekt */
 }
 
 /* centrerer billedet(temaboksene) i midten */
@@ -47,26 +47,9 @@
   margin: 0 auto; /* Centers the text block horizontally on the page */
   padding: 50px;
   /* tilføjer en transition effekt på alt der ændres (all - margin, padding), på 0.3 sekunder, med langsom, accelerere i midten, og langsom til slut. */
-  transition: all 0.3s ease; /* Smooth transition for margin and size adjustments */
+  transition: all 0.3s ease;
 }
 
-/* .grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 5rem;
-} */
-/* 
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
-} */
-
-/* .brown_box {
-  position: relative;
-  top: -40%;
-  left: 50%;
-} */
 .brown_box {
   display: flex;
   justify-content: end;
@@ -77,6 +60,7 @@
 ul {
   margin-left: 15px;
 }
+/* spil-elementer */
 .grid_1-1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -94,22 +78,24 @@ ul {
 /* Så teksten under lottie og billede ikke overlapper */
 .wrapper {
   display: block;
-  overflow: hidden; /* Prevents text from spilling into the animation container */
   margin-top: -55px;
 }
 
 /* Baggrundsbilledet på forside(med lottie) */
 .forside_img {
-  grid-area: 1 / 1; /* Placerer animationen i samme grid celle */
+  /* Placerer animationen i samme grid celle */
+  grid-area: 1 / 1;
   width: 100%;
   height: auto;
 }
 
 /* Lottie filen */
 .lottie {
-  grid-area: 1 / 1; /* Placerer animationen i samme grid celle */
+  /* Placerer animationen i samme grid celle */
+  grid-area: 1 / 1;
   width: 100%;
-  z-index: 2; /* bliver placeret ovenpå billedet */
+  /* bliver placeret ovenpå billedet */
+  z-index: 2;
 }
 
 .lottie_1 {
@@ -141,30 +127,30 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
 }
-/* Styling af det første barn i sæt af 3 */
+/* Styling af det første barn i sæt af 3 - 1,4,7 */
 .grid_1-1-1 > p:nth-child(3n + 1) {
   padding-top: 1rem;
 }
+
+/* Emilia Schrøder tekst på om mig siden */
 .bg_img {
-  background-image: url(../billeder/om_mig/Group\ 93.webp);
+  background-image: url(../billeder/om_mig/Group93.webp);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100%;
   padding-bottom: 2rem;
 }
 
+/* grid på om mig side, med prtrætbillede, kontakt og illustration */
 .grid_3 {
   display: grid;
+  /* tre kolonner */
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 3rem;
   gap: 10px;
 }
-.mig {
-  grid-column: 2 / span 1;
-}
 
 .bla {
-  grid-column: 3 / span 1;
   margin-top: 70%;
 }
 .bla p {
@@ -173,7 +159,7 @@ ul {
 }
 
 .blomst {
-  grid-column: 1 / span 1;
+  /* grid-column: 1 / span 1; */
   margin-top: 70%;
   margin-left: 50%;
   max-width: 45%;
@@ -193,6 +179,7 @@ ul {
 
 .grid_forside {
   display: grid;
+  /* Teksten fylder mere end blomsterne, så det ikke bliver mast sammen */
   grid-template-columns: 1fr 2fr 1fr;
   gap: 20px;
   text-align: center;
@@ -207,7 +194,8 @@ ul {
   .center {
     text-align: center;
     max-width: 55%;
-    margin: 0 auto; /* Centers the text block horizontally on the page */
+    /* centrerer teksten horisontalt på siden */
+    margin: 0 auto;
     padding: 60px;
   }
 
@@ -245,25 +233,28 @@ ul {
     width: 100%;
     /* bredden af grid */
     max-width: 1000px;
-    text-align: left; /* Default text alignment for all grid items */
+    /* tekst står til venstre */
+    text-align: left;
   }
 
-  /* Specifik styling af kolonerne */
+  /* Specifik styling af kolonnerne */
   /* n er en variabel, der repræsenterer en række tal (0, 1, 2, 3 osv.). */
   .grid_1-1-1 > p:nth-child(3n + 1) {
     /* bold tekst i den første kolonne (3n+1 er rettet mod det første "barn" i hvert sæt af 3 - kolonne 1)*/
-    font-weight: bold; /* Bold text for the first column */
+    font-weight: bold;
     padding-top: 0;
   }
 
   /* Styling af det andet "barn" i hvert sæt af 3 (kolonne 2)*/
   .grid_1-1-1 > p:nth-child(3n + 2) {
+    /* teksten står i midten i anden kolonne */
     text-align: center;
   }
 
   /* Styling af det tredje barn, i hvert sæt af 3 (tredje kolonne) */
   .grid_1-1-1 > p:nth-child(3n) {
-    text-align: right; /* Right-aligned for the last column */
+    /* teksten står i højre side i tredje kolonne */
+    text-align: right;
   }
 
   .grid_3 {
@@ -293,17 +284,18 @@ ul {
     padding-top: 2rem;
   }
 
-  /* Grid layout */
+  /* Grid layout på forside, med indledende tekst og blomster*/
   .grid_container {
     padding-bottom: 4rem;
     padding-top: 3rem;
   }
   .grid_forside {
+    /* her bliver det tre lige store kolonner */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /* Adjust images inside grid */
+  /* Justering af billedstørrelsen i grid*/
   .grid_forside img {
     max-width: 40%;
   }
