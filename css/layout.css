@@ -43,7 +43,7 @@
 
 /* tema 2 layout */
 .marg {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto; /* Centers the text block horizontally on the page */
   padding: 50px;
   /* tilføjer en transition effekt på alt der ændres (all - margin, padding), på 0.3 sekunder, med langsom, accelerere i midten, og langsom til slut. */
