@@ -1,9 +1,8 @@
 /* Kirsebær */
 #good_container1 {
-  position: absolute;
   aspect-ratio: 500/500;
-  width: 18%;
-  right: 45%;
+  width: 30%;
+  margin: auto;
 }
 #good_sprite1 {
   width: 100%;
@@ -17,6 +16,20 @@
   animation-name: pulse_kf;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+#play_knap {
+  aspect-ratio: 200/100;
+  width: 30%;
+  /* placeres i midten */
+  margin: 20px auto;
+}
+
+#play_knap_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../billeder/tema4/play.svg);
+  background-size: cover;
 }
 
 /* scalering af kirsebær */
@@ -49,4 +62,11 @@
   100% {
     scale: 0;
   }
+}
+
+/* Når man scroller ned kommer der en underline under headeren */
+header.scrolled {
+  border-bottom: solid 1px var(--brown);
+  /* Smooth transition når der kommer underline - det sker når classen bliver fjernet/tilføjet */
+  transition: border-bottom 0.3s ease;
 }

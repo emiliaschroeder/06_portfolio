@@ -7,10 +7,7 @@
 header {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--mocca);
   font-family: "Anybody", sans-serif;
   font-weight: 400;
@@ -22,10 +19,6 @@ header {
   color: var(--brown);
 }
 
-.logo img {
-  max-width: 40%;
-}
-
 /* bredden på nav er 100%, fylder hele siden */
 nav {
   width: 100%;
@@ -34,7 +27,6 @@ nav {
 .menu {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 100%;
   list-style: none;
   text-align: center;
 }
@@ -52,7 +44,6 @@ nav {
   padding: 10px;
   color: var(--brown);
   text-decoration: none;
-  transition: color 0.3s;
   /* teksten i hvert menu item er centreret */
   text-align: center;
 }
@@ -111,8 +102,6 @@ menu ul {
     position: absolute;
     top: 58px;
     left: 0;
-    /* fylder kun noget af siden */
-    width: 40%;
     z-index: 1;
   }
 
@@ -124,8 +113,5 @@ menu ul {
     font-size: 24px;
     /* text align venstre side i burger menu */
     text-align: left;
-  }
-  .logo img {
-    max-width: 30%;
   }
 }

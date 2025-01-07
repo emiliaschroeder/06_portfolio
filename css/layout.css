@@ -18,7 +18,7 @@
   gap: 20px; /* plads imellem kasserne */
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .project-box-f:hover {
   transform: scale(1.02); /* zoom-in effekt */
@@ -306,5 +306,9 @@ ul {
 
   .lottie_1 {
     padding-bottom: 5rem;
+  }
+
+  .project_grid {
+    margin-bottom: 6rem;
   }
 }
